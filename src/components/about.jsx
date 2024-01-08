@@ -1,5 +1,5 @@
 import { useState } from "react";
-import foto from '/image/img.png'
+import foto from '../assets/img.png'
 
 const Main = () => {
 
