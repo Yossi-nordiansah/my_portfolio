@@ -1,4 +1,5 @@
 import { useState } from "react";
+import foto from '/image/img.png'
 
 const Main = () => {
 
@@ -30,7 +31,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] h-72 w-72 ">
-                    <img className="w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src='/image/img.png' alt="" />
+                    <img className="w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src={foto} alt="" />
                 </div>
             </div>
 

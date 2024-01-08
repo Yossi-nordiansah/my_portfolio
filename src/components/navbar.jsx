@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "/image/logo4.png"
 
 const Navbar = ({sendData}) => {
 
@@ -43,7 +44,7 @@ const Navbar = ({sendData}) => {
 
     return (
         <nav className="laptop:px-10 mobile-sm:px-0 bg-blue-800/5 w-full mobile-sm:pt-2 fixed flex justify-between items-center flex-wrap backdrop-blur-md z-10">
-            <img src="/image/logo4.png" className="h-14 mobile-sm:m-auto laptop:ml-0" alt="" />
+            <img src={logo} className="h-14 mobile-sm:m-auto laptop:ml-0" alt="" />
             <ul className="text-white mobile-sm:m-auto mobile-sm:py-4 mobile:text-base mobile:gap-8 laptop:mr-0 font-bold font-inter laptop:gap-8 mobile-sm:text-xs flex mobile-sm:justify-between mobile-sm:gap-3 laptop:text-base">
                 {navbarMenu?.map(item =>
                     item.status === 'clicked' ?
