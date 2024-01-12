@@ -23,7 +23,7 @@ const Navbar = ({sendData}) => {
         {
             id: 3,
             name: 'Project',
-            path: '/my_portfolio/',
+            path: '/my_portfolio/project',
             status: 'unclicked'
         }
     ]);

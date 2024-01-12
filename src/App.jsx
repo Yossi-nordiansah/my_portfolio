@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Navbar from './components/navbar';
 import About from './components/about';
 import Skills from './components/skills';
+import Project from './components/project'
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path='/my_portfolio/' Component={About} />
           <Route path='/my_portfolio/skills' Component={Skills} />
-          <Route path='/my_portfolio/project' Component={About} />
+          <Route path='/my_portfolio/project' Component={Project} />
           <Route path='/my_portfolio/'  Component={About} />
         </Routes>
         <Footer/>

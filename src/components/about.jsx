@@ -3,7 +3,7 @@ import foto from '../assets/img.png'
 
 const Main = () => {
 
-    const [showContact, setShowContact] = useState(false)
+    const [showContact, setShowContact] = useState(false);
 
     const receiveData = (value) => {
         setShowContact(true)
