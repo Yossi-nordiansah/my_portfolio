@@ -54,12 +54,12 @@ const Project = () => {
         },
         {
             id:3,
-            title : 'Books App',
+            title : 'Password Generator',
             category: 'Web App',
-            description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities',
-            repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
-            page:'https://yossi-nordiansah.github.io/books-app//',
-            img:'/image/books-app.png'
+            description:'A web app that functions to generate a random password based on the username you input.',
+            repo:'https://github.com/Yossi-nordiansah/password-generator',
+            page:'https://yossi-nordiansah.github.io/password-generator/',
+            img:'/image/password-generator.png'
         },
         {
             id:4,
@@ -115,49 +115,3 @@ const Project = () => {
 }
 
 export default Project;
-
-// const MySlider = () => {
-//     const settings = {
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         responsive: [
-//             {
-//                 breakpoint: 1024,
-//                 settings: {
-//                     slidesToShow: 2,
-//                     slidesToScroll: 1,
-//                     infinite: true,
-//                     dots: true,
-//                 },
-//             },
-//             {
-//                 breakpoint: 600,
-//                 settings: {
-//                     slidesToShow: 1,
-//                     slidesToScroll: 1,
-//                     initialSlide: 1,
-//                 },
-//             },
-//         ],
-//     };
-
-//     return (
-//         <Slider {...settings}>
-//             <div>
-//                 <h3>Slide 1</h3>
-//             </div>
-//             <div>
-//                 <h3>Slide 2</h3>
-//             </div>
-//             <div>
-//                 <h3>Slide 3</h3>
-//             </div>
-//             {/* Add more slides */}
-//         </Slider>
-//     );
-// };
-
-// export default MySlider;
