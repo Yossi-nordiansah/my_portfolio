@@ -47,7 +47,7 @@ const Project = () => {
             id:2,
             title : 'Books App',
             category: 'Web App',
-            description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quam laborum tenetur maxime! Reiciendis fugiat nemo, et, quaerat beatae eaque dignissimos perspiciatis architecto, quam delectus cum nisi voluptas laborum. Facere.',
+            description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities.',
             repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
             page:'https://yossi-nordiansah.github.io/books-app//',
             img:'/image/books-app.png'
@@ -63,12 +63,12 @@ const Project = () => {
         },
         {
             id:4,
-            title : 'Books App',
+            title : 'Calculator',
             category: 'Web App',
-            description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities',
-            repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
-            page:'https://yossi-nordiansah.github.io/books-app//',
-            img:'/image/books-app.png'
+            description:'A simple calculator App',
+            repo:'https://github.com/Yossi-nordiansah/kalkulator',
+            page:'https://yossi-nordiansah.github.io/kalkulator/',
+            img:'/image/calculator.png'
         },
         {
             id:5,
@@ -89,19 +89,19 @@ const Project = () => {
                 <Slider {...settings}>
                 {
                     projects.map((item) => (
-                        <div key={item.id} className='bg-[#0e1b34] overflow-hidden w-72 pb-3 rounded-lg border-2 flex flex-col border-white'>
+                        <div key={item.id} className='bg-[#0e1b34] overflow-hidden w-72 h-96 pb-3 rounded-lg border-2 flex flex-col border-white'>
                             <img src={item.img} className='' alt="" />
                             <div className='py-3 px-4'>
                                 <h1 className='text-white text-2xl font-poppins font-bold underline mb-1'>{item.title}</h1>
                                 <p className='font-inter text-white font-semibold'>{item.category}</p>
-                                <p className='font-inter text-white max-w-full mt-1 text-justify mb-2 max-h-[68px] scrollbar-hide overflow-auto'>{item.description}</p>
+                                <p className='font-inter text-white max-w-full mt-1 text-justify mb-2 h-24 max-h-[68px] scrollbar-hide overflow-auto'>{item.description}</p>
                             </div>
                             <div className='mt-auto px-4 flex gap-3'>
                                 <a href={item.repo} target='_blank'>
                                     <button title='see repository' className='px-2 py-1 border-2 hover:bg-yellow-400 rounded-md bg-yellow-500'><img src="icons/code.svg" alt="" /></button>
                                 </a>
                                 <a href={item.page} target='_blank'>
-                                    <button title='go to page' className='px-2 py-1 border-2 hover:bg-yellow-400 rounded-md bg-yellow-500'><img src="icons/preview.svg" alt="" /></button>
+                                    <button title='visit site' className='px-2 py-1 border-2 hover:bg-yellow-400 rounded-md bg-yellow-500'><img src="icons/external-link.svg" alt="" /></button>
                                 </a>
                             </div>
                         </div>
