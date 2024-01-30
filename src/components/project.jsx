@@ -3,6 +3,13 @@ import React  from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import taskTracker from '../assets/image/task-tracker.png';
+import bookApp from '../assets/image/books-app.png';
+import passwordGenerator from '../assets/image/password-generator.png';
+import calculator from '../assets/image/calculator.png';
+import dapur_Minang from '../assets/image/dapur_minang.png';
+import netplix from '../assets/image/netflix.png';
+
 
 const Project = () => {
 
@@ -41,7 +48,7 @@ const Project = () => {
             description:'A web app to-do list that is simplified with features for completion and deletion from the lis',
             repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
             page:'https://loquacious-horse-45d5f2.netlify.app/',
-            img:'/image/task-tracker.png'
+            img: {taskTracker}
         },
         {
             id:2,
@@ -50,7 +57,7 @@ const Project = () => {
             description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities.',
             repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
             page:'https://yossi-nordiansah.github.io/books-app//',
-            img:'/image/books-app.png'
+            img:{bookApp}
         },
         {
             id:3,
@@ -59,7 +66,7 @@ const Project = () => {
             description:'A web app that functions to generate a random password based on the username you input.',
             repo:'https://github.com/Yossi-nordiansah/password-generator',
             page:'https://yossi-nordiansah.github.io/password-generator/',
-            img:'/image/password-generator.png'
+            img:{passwordGenerator}
         },
         {
             id:4,
@@ -68,16 +75,25 @@ const Project = () => {
             description:'A simple calculator App',
             repo:'https://github.com/Yossi-nordiansah/kalkulator',
             page:'https://yossi-nordiansah.github.io/kalkulator/',
-            img:'/image/calculator.png'
+            img:{calculator}
         },
         {
             id:5,
-            title : 'Books App',
-            category: 'Web App',
-            description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities',
+            title : 'Dapur Minang',
+            category: 'Restaurant Website',
+            description:'This is a landing page for the "Dapur Minang" restaurant website, equipped with simple and attractive animations. Additionally, this landing page is also equipped with a dark mode to better suit users.',
             repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
             page:'https://yossi-nordiansah.github.io/books-app//',
-            img:'/image/books-app.png'
+            img:{dapur_Minang}
+        },
+        {
+            id:6,
+            title : 'Netplix',
+            category: 'Restaurant Website',
+            description:'A cloning of the Netflix landing page.',
+            repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
+            page:'https://yossi-nordiansah.github.io/netplix/',
+            img:{netplix}
         },
 
     ])

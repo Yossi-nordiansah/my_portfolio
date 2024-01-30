@@ -1,5 +1,10 @@
 import { useState } from "react";
-import foto from '../assets/img.png'
+import foto from '../assets/img.png';
+import download from "../assets/icons/download.svg";
+import view from "../assets/icons/view.svg";
+import yayasan from "../assets/icons/course.svg";
+import education from "../assets/icons/education-cap-svgrepo-com.svg";
+import work from "../assets/icons/work.svg";
 
 const Main = () => {
 
@@ -21,11 +26,11 @@ const Main = () => {
                     </p>
                     <div className="mt-7 flex gap-3">
                         <div className="border-2 border-dashed flex items-center justify-center gap-2 hover:bg-stone-500 rounded-lg w-[30%] cursor-pointer bg-white/30 border-yellow-400 py-1">
-                            <img src="icons/download.svg" className='w-6' alt="" />
+                            <img src={download} className='w-6' alt="" />
                             <p className="text-white font-semibold font-poppins">DOWNLOAD RESUME</p>
                         </div>
                         <div className="border-2 border-dashed hover:bg-stone-500 flex items-center gap-2 justify-center rounded-lg w-[30%] cursor-pointer bg-white/30 border-yellow-400 py-1">
-                            <img src="icons/view.svg" className='w-6' alt="" />
+                            <img src={view} className='w-6' alt="" />
                             <p className="text-white font-semibold font-poppins text-center">VIEW RESUME</p>
                         </div>
                     </div>
@@ -39,7 +44,7 @@ const Main = () => {
             <div className="laptop:w-4/5 mobile:w-11/12 mt-40 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
                 <h1 className=" font-poppins mobile-sm:pl-4 laptop:pl-0 font-bold text-4xl text-blue-300 text-left">Education</h1>
                 <div className="pl-6 mt-10">
-                    <img src="icons/course.svg" alt="" className="w-6"/>
+                    <img src={yayasan} alt="" className="w-6"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-20">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="text-2xl font-bold">Yayasan Adipurna Inovasi Asia &#40;Kampus Merdeka Program&#41;</h1>
@@ -47,7 +52,7 @@ const Main = () => {
                             <p className="font-bold">Front End Web Developer</p>
                         </div>
                     </div>
-                    <img src="icons/education-cap-svgrepo-com.svg" alt="" className="w-6 mt-4"/>
+                    <img src={education} alt="" className="w-6 mt-4"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-20">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="text-2xl font-bold">Universitas Islam Majapahit</h1>
@@ -55,7 +60,7 @@ const Main = () => {
                             <p className="font-bold">Informatics Engineering</p>
                         </div>
                     </div>
-                    <img src="icons/education-cap-svgrepo-com.svg" alt="" className="w-6 mt-4"/>
+                    <img src={education} alt="" className="w-6 mt-4"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-16">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="text-2xl font-bold">SMAN 1 Kutorejo</h1>
@@ -70,7 +75,7 @@ const Main = () => {
             <div className="laptop:w-4/5 mobile:w-11/12 mt-32 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
                 <h1 className=" font-poppins mobile-sm:pl-4 laptop:pl-0 font-bold text-4xl text-blue-300 text-left">Work Experience</h1>
                 <div className="pl-6 mt-10">
-                    <img src="icons/work.svg" alt="" className="w-6"/>
+                    <img src={work} alt="" className="w-6"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-26">
                         <div className="ml-10 text-white flex flex-col gap-4 relative -top-9">
                             <h1 className="text-2xl font-bold">PT Wezzo Sukses Mandiri</h1>
@@ -79,7 +84,7 @@ const Main = () => {
                             <p className="font-bold">Cleaning Service</p>
                         </div>
                     </div>
-                    <img src="icons/work.svg" alt="" className="w-6 mt-4"/>
+                    <img src={work} alt="" className="w-6 mt-4"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-26">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="text-2xl font-bold">PT Prada Karya Perkasa</h1>
@@ -88,7 +93,7 @@ const Main = () => {
                             <p className="font-bold">Helper Thermo</p>
                         </div>
                     </div>
-                    <img src="icons/work.svg" alt="" className="w-6 mt-4"/>
+                    <img src={work} alt="" className="w-6 mt-4"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-24">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="text-2xl font-bold">Yudi Shoes</h1>

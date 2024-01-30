@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "/image/logo4.png"
+import logo from "../assets/image/logo4.png"
 
 const Navbar = ({sendData}) => {
 
