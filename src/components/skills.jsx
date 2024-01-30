@@ -54,18 +54,3 @@ const Skills = () => {
 }
 
 export default Skills;
-
-        {/* <!-- Card --> */}
-                {/* <div className="w-64 rounded-lg border-4 pt-3 shrink-0 bg-transparent border-blue-400">
-                    <img src='icons/html.svg' className="w-full h-60 m-auto bg-white" alt="" />
-                    <div className="w-full bg-gradient-to-b from-blue-800 to-blue-950 rounded-b-md mt-5">
-                        <h3 className="text-center font-kanit pt-3 text-xl text-slate-300">HTML 5</h3>
-                        <div className="w-full flex gap-3 justify-center py-4">
-                            <div className="h-4 w-4 rounded-full drop-shadow-[0_0px_15px_#ffff00] bg-yellow-400"></div>
-                            <div className="h-4 w-4 rounded-full drop-shadow-[0_0px_15px_#ffff00] bg-yellow-400"></div>
-                            <div className="h-4 w-4 rounded-full drop-shadow-[0_0px_15px_#ffff00] bg-yellow-400"></div>
-                            <div className="h-4 w-4 rounded-full drop-shadow-[0_0px_15px_#ffff00] bg-yellow-400"></div>
-                            <div className="h-4 w-4 rounded-full bg-slate-400"></div>
-                        </div>
-                    </div>
-                </div>           */}
