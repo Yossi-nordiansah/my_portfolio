@@ -50,7 +50,7 @@ const Navbar = () => {
 
     return (
         <nav className="sm:px-10 px-5  bg-blue-800/5 w-full py-2 fixed flex justify-between items-center backdrop-blur-md z-10">
-            <img src={logo} className="xs:w-44 xxs:w-32" alt="" />
+            <img src={logo} className="xs:w-44 w-32" alt="" />
             <ul className="text-white font-bold font-inter gap-8 hidden md:flex">
                 {navbarMenu?.map(item =>
                     item.status === 'clicked' ?
