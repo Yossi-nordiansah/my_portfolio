@@ -83,8 +83,8 @@ const Project = () => {
             title : 'Dapur Minang',
             category: 'Restaurant Website',
             description:'This is a landing page for the "Dapur Minang" restaurant website, equipped with simple and attractive animations. Additionally, this landing page is also equipped with a dark mode to better suit users.',
-            repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
-            page:'https://yossi-nordiansah.github.io/books-app//',
+            repo:'https://github.com/Yossi-nordiansah/dapur-minang',
+            page:'https://yossi-nordiansah.github.io/dapur-minang/',
             img: dapur_Minang
         },
         {
@@ -92,7 +92,7 @@ const Project = () => {
             title : 'Netplix',
             category: 'Landing Page',
             description:'A cloning of the Netflix landing page.',
-            repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
+            repo:'https://github.com/Yossi-nordiansah/netplix',
             page:'https://yossi-nordiansah.github.io/netplix/',
             img:netplix
         },

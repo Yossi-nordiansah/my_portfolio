@@ -5,6 +5,7 @@ import view from "../assets/icons/view.svg";
 import yayasan from "../assets/icons/course.svg";
 import education from "../assets/icons/education-cap-svgrepo-com.svg";
 import work from "../assets/icons/work.svg";
+import wa from '../assets/image/icons8-whatsapp-48.png';
 
 const Main = () => {
 
@@ -15,33 +16,33 @@ const Main = () => {
     }
 
     return (
-        <main className=" w-full mobile-sm:min-w-full mobile-sm:pt-28 bg-gradient-to-b grid grid-rows-[100px_auto_auto_auto_30px_auto] mobile-sm:gap-y-8 from-blue-950 to-blue-800">
-            <h1 className="font-kanit laptop:text-6xl mobile-sm:text-4xl laptop:pl-10 mobile-sm:pl-5 pt-5 text-sky-400 tracking-wider font-bold drop-shadow-[0_0px_15px_#0066ff]">Wellcome To My Portfolio</h1>
+        <main className=" w-full min-w-full sm:pt-24 xs:pt-20 xxs:pt-16 bg-gradient-to-b grid grid-rows-[auto_auto_auto_auto_30px_auto] gap-y-3 from-blue-950 to-blue-800">
+            <h1 className="font-kanit xl:text-6xl lg:text-5xl sm:text-4xl sm:text-left xs:text-[26px] xxs:text-lg sm:pl-20 xl:pl-10 xxs:text-center text-sky-400 tracking-wider font-bold drop-shadow-[0_0px_15px_#0066ff]">Wellcome To My Portfolio</h1>
 
             {/* <!-- intro --> */}
-            <div className="laptop:w-4/5 m-auto flex laptop:flex-row mobile-sm:flex-col-reverse mobile-sm:w-full justify-between items-center " id="about">
-                <div className="laptop:w-8/12 mobile-sm:w-11/12">
-                    <p className="font-inter laptop:text-xl font-semibold laptop:first-letter:text-6xl mobile-sm:first-letter:text-4xl text-slate-200 text-justify">
+            <div className="xl:w-4/5 lg:w-[90%] mx-auto lg:mt-12 sm:mt-5 xs:mt-3 flex lg:flex-row flex-col-reverse justify-between items-center" id="about">
+                <div className="lg:w-8/12 xxs:w-[90%] ">
+                    <p className="font-inter sm:text-xl xs:text-lg xxs:text-base lg:w-full md:w-full font-semibold sm:first-letter:text-6xl xs:first-letter:text-4xl xxs:first-letter:text-2xl text-slate-200 text-justify">
                         Hello, My name is <span className="text-blue-400 font-poppins">Yossi Nordiansah</span>, I am a Junior Front-End Web Developer who works with React.js Library or Vanilla JavaScript.  I am also accustomed to using Git and GitHub for Collaborative teamwork. Currently, I reside in the city of Mojokerto and am an active student at one of the private universities located there. At the moment, I have gained experience working on various projects, ranging from simple to mid-scale websites, with Attractive and Responsive designs.
                     </p>
                     <div className="mt-7 flex gap-3">
-                        <div className="border-2 border-dashed flex items-center justify-center gap-2 hover:bg-stone-500 rounded-lg w-[30%] cursor-pointer bg-white/30 border-yellow-400 py-1">
-                            <img src={download} className='w-6' alt="" />
-                            <p className="text-white font-semibold font-poppins">DOWNLOAD RESUME</p>
+                        <div className="border-2 border-dashed flex items-center justify-center gap-2 hover:bg-stone-500 rounded-lg sm:w-[30%] xs:w-[40%] xxs:w-[60%] cursor-pointer bg-white/30 border-yellow-400 sm:py-1 py-2">
+                            <img src={download} className='sm:w-6 xxs:w-4' alt="" />
+                            <p className="text-white md:text-sm sm:text-[12px] xs:text-[10px] xxs:text-[8px]">DOWNLOAD RESUME</p>
                         </div>
-                        <div className="border-2 border-dashed hover:bg-stone-500 flex items-center gap-2 justify-center rounded-lg w-[30%] cursor-pointer bg-white/30 border-yellow-400 py-1">
-                            <img src={view} className='w-6' alt="" />
-                            <p className="text-white font-semibold font-poppins text-center">VIEW RESUME</p>
+                        <div className="border-2 border-dashed hover:bg-stone-500 flex items-center gap-2 justify-center rounded-lg sm:w-[30%] xs:w-[40%] xxs:w-[60%] cursor-pointer bg-white/30 border-yellow-400 py-1">
+                            <img src={view} className='sm:w-6 xxs:w-4 ' alt="" />
+                            <p className="text-white md:text-sm sm:text-[12px] xs:text-[10px] xxs:text-[8px] text-center">VIEW RESUME</p>
                         </div>
                     </div>
                 </div>
-                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] h-72 w-72 ">
-                    <img className="w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src={foto} alt="" />
+                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 xxs:w-56 xxs:h-56 ">
+                    <img className="xs:w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src={foto} alt="" />
                 </div>
             </div>
 
             {/* <!-- Education --> */}
-            <div className="laptop:w-4/5 mobile:w-11/12 mt-40 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
+            <div className="w-4/5 mt-20 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
                 <h1 className=" font-poppins mobile-sm:pl-4 laptop:pl-0 font-bold text-4xl text-blue-300 text-left">Education</h1>
                 <div className="pl-6 mt-10">
                     <img src={yayasan} alt="" className="w-6"/>
@@ -69,11 +70,12 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
+                <img src="" alt="" />
             </div>
 
             {/* <!-- Work Experience --> */}
-            <div className="laptop:w-4/5 mobile:w-11/12 mt-32 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
-                <h1 className=" font-poppins mobile-sm:pl-4 laptop:pl-0 font-bold text-4xl text-blue-300 text-left">Work Experience</h1>
+            <div className="w-4/5 mt-20 mx-auto justify-between " id="education">
+                <h1 className="font-poppins pl-0 font-bold text-4xl text-blue-300 text-left">Work Experience</h1>
                 <div className="pl-6 mt-10">
                     <img src={work} alt="" className="w-6"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-26">
@@ -103,6 +105,9 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="fixed md:hidden right-6 bottom-9">
+            <a target="_blank" href="https://wa.me/6285655230897"><img src={wa} alt="" /></a>
             </div>
         </main>
     )

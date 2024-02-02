@@ -6,9 +6,6 @@ import tg from '../assets/image/icons8-telegram-48.png'
 import li from '../assets/icons/linkedin.svg';
 import em from '../assets/icons/gmail.svg';
 
-
-
-
 const Footer = () => {
     return(
         <footer className='bg-slate-700 w-full py-6' id="contact" >

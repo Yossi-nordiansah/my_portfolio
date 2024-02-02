@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import About from './components/about';
 import Skills from './components/skills';
 import Project from './components/project'
+import MyComponent from './components/navbar';
 
 
 function App() {

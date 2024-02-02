@@ -4,19 +4,12 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-
-      'mobile-sm' : '320px',
-
-      'mobile': '506px',
-
-      'tablet': '802px',
-
-      'tablet-sm': '640px',
-
-      'laptop': '1080px',
-
-      'desktop': '1280px',
-    
+      'xs': '380px',
+      'xxs': '280px',
+      'sm' : '640px',
+      'md' : '768px',
+      'lg' : '1024px',
+      'xl' : '1280px',
     },
     extend: {
       fontFamily:{
