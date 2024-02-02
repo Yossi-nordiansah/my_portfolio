@@ -67,7 +67,7 @@ const Navbar = () => {
                 </div> : null
             }
             <img src={menu} alt="" onClick={()=>setShowMenu(!showMenu)} className="md:hidden"/>
-                <ul ref={menuRef}  className={`bg-blue-800 ${showMenu? 'block' : 'hidden'} border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] xxs:w-[50%] text-center`}>
+                <ul ref={menuRef}  className={`bg-blue-800 ${showMenu? 'block' : 'hidden'} border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] w-[50%] text-center`}>
                     {
                         navbarMenu?.map(item =>(  
                                 <Link to={item.path} key={item.id}>
