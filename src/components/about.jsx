@@ -36,7 +36,7 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 xxs:w-56 xxs:h-56 ">
+                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 w-56 h-56 ">
                     <img className="xs:w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src={foto} alt="" />
                 </div>
             </div>
@@ -44,29 +44,29 @@ const Main = () => {
             {/* <!-- Education --> */}
             <div className="w-4/5 mt-20 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
                 <h1 className=" font-poppins mobile-sm:pl-4 laptop:pl-0 font-bold text-4xl text-blue-300 text-left">Education</h1>
-                <div className="pl-6 mt-10">
+                <div className="lg:pl-6 pl-2 mt-10">
                     <img src={yayasan} alt="" className="w-6"/>
-                    <div className="border-l-2 border-white ml-3 mt-2 h-20">
-                        <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
-                            <h1 className="text-2xl font-bold">Yayasan Adipurna Inovasi Asia &#40;Kampus Merdeka Program&#41;</h1>
-                            <p className="font-semibold">August 2023 - December 2023</p>
-                            <p className="font-bold">Front End Web Developer</p>
+                    <div className="border-l-2 border-white ml-3 mt-2 lg:h-20 xs:h-20 h-28 leading-5">
+                        <div className="ml-10 text-white flex flex-col lg:gap-3 gap-2 relative -top-9">
+                            <h1 className="lg:text-2xl sm:text-xl xs:text-base font-bold">Yayasan Adipurna Inovasi Asia &#40;Kampus Merdeka Program&#41;</h1>
+                            <p className="sm:text-base text-sm">August 2023 - December 2023</p>
+                            <p className="font-bold xs:text-base text-sm">Front End Web Developer</p>
                         </div>
                     </div>
                     <img src={education} alt="" className="w-6 mt-4"/>
-                    <div className="border-l-2 border-white ml-3 mt-2 h-20">
-                        <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
-                            <h1 className="text-2xl font-bold">Universitas Islam Majapahit</h1>
-                            <p className="font-semibold">2020 - Present</p>
-                            <p className="font-bold">Informatics Engineering</p>
+                    <div className="border-l-2 border-white ml-3 mt-2 lg:h-20 h-16">
+                        <div className="ml-10 text-white flex flex-col lg:gap-3 gap-2 relative -top-9">
+                            <h1 className="lg:text-2xl text-xl font-bold leading-6">Universitas Islam Majapahit</h1>
+                            <p className="sm:text-base text-sm">2020 - Present</p>
+                            <p className="font-bold xs:text-base text-sm">Informatics Engineering</p>
                         </div>
                     </div>
                     <img src={education} alt="" className="w-6 mt-4"/>
                     <div className="border-l-2 border-white ml-3 mt-2 h-16">
-                        <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
-                            <h1 className="text-2xl font-bold">SMAN 1 Kutorejo</h1>
-                            <p className="font-semibold">2015 - 2018</p>
-                            <p className="font-bold">Majoring Science</p>
+                        <div className="ml-10 text-white flex flex-col lg:gap-3 gap-2 relative -top-9">
+                            <h1 className="lg:text-2xl text-xl font-bold leading-6">SMAN 1 Kutorejo</h1>
+                            <p className="sm:text-base text-sm">2015 - 2018</p>
+                            <p className="font-bold xs:text-base text-sm">Majoring Science</p>
                         </div>
                     </div>
                 </div>

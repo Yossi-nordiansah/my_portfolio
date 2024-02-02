@@ -21,7 +21,7 @@ function App() {
           <Route path='/my_portfolio/project' Component={Project} />
           <Route path='/my_portfolio/'  Component={About} />
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </Router>
     </>
   )
