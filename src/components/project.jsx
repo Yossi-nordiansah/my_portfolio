@@ -100,15 +100,15 @@ const Project = () => {
     ])
 
     return (
-        <div className='bg-gradient-to-b pt-20 min-h-screen from-blue-950 to-blue-800'>
+        <div className='bg-gradient-to-b pt-20 pb-28 from-blue-950 to-blue-800'>
             <h1 className="font-poppins font-bold text-4xl text-center text-blue-300 mb-10">Projects</h1>
-            <div className='w-[80%] mx-auto mt-7 flex flex-col pb-20'>
+            <div className='w-[80%] mx-auto mt-7 flex flex-col'>
                 <Slider {...settings}>
                 {
                     projects?.map((items) => (
-                        <div key={items.id} className='bg-[#0e1b34] group w-72 h-fit pb-3 overflow-hidden rounded-lg border-2 flex flex-col border-white'>
+                        <div key={items.id} className='bg-[#0e1b34] w-72 h-fit pb-3 overflow-hidden rounded-lg border-2 flex flex-col border-white'>
                             <img src={items.img} className='w-full' alt="" />
-                            <div className='py-3 px-4 '>
+                            <div className='py-3 px-4 group'>
                                 <h1 className='text-white xl:text-2xl lg:text-[20px]  xs:text-xl font-poppins font-bold underline mb-1 '>{items.title}</h1>
                                 <p className='font-inter text-white font-semibold'>{items.category}</p>
                                 <p className='font-inter text-white line-clamp-1 group-hover:line-clamp-none max-w-full mt-1 transition-all duration-200 text-justify mb-2 '>{items.description}</p>
