@@ -15,7 +15,7 @@ const Main = () => {
         AOS.init();
       }, []);
 
-    const pdfURL = 'https://drive.google.com/file/d/14qRNj7FRRGf4uO_BumBolqf8tzw0SXxM/view?usp=sharing';
+    const pdfURL = 'https://drive.google.com/file/d/1QiC2ijqISGC_YkdA_dm1gEUljXZ3pig4/view?usp=sharing';
     const [showContact, setShowContact] = useState(false);
     return (
         <main className=" w-full min-w-full sm:pt-24 xs:pt-20 pt-16 bg-gradient-to-b grid grid-rows-[auto_auto_auto_auto_30px_auto] gap-y-3 from-blue-950 to-blue-800">
