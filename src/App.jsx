@@ -12,7 +12,7 @@ import MyComponent from './components/navbar';
 function App() {
 
   return (
-    <>
+    <div className='bg-gradient-to-b from-blue-950 to-blue-800'>
       <Router>
         <Navbar />
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
         {/* <Footer/> */}
       </Router>
-    </>
+    </div>
   )
 }
 

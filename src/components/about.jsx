@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import foto from '../assets/img.png';
 import view from "../assets/icons/view.svg";
 import yayasan from "../assets/icons/course.svg";
@@ -6,9 +6,14 @@ import education from "../assets/icons/education-cap-svgrepo-com.svg";
 import work from "../assets/icons/work.svg";
 import wa from '../assets/image/icons8-whatsapp-48.png';
 import { TypeAnimation } from 'react-type-animation';
-import {Document, Page} from "react-pdf";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Main = () => {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     const pdfURL = 'https://drive.google.com/file/d/14qRNj7FRRGf4uO_BumBolqf8tzw0SXxM/view?usp=sharing';
     const [showContact, setShowContact] = useState(false);
@@ -35,9 +40,9 @@ const Main = () => {
             </div>
 
             {/* <!-- intro --> */}
-            <div className="xl:w-4/5 lg:w-[90%] mx-auto lg:mt-16 sm:mt-14 xs:mt-14 mt-10 flex lg:flex-row flex-col-reverse justify-between items-center" id="about">
+            <div className="xl:w-4/5 lg:w-[90%] mx-auto lg:mt-16 sm:mt-14 xs:mt-14 mt-10 flex lg:flex-row flex-col-reverse justify-between items-center " id="about">
                 <div className="lg:w-8/12 w-[90%] ">
-                    <p className="font-inter sm:text-xl xs:text-lg text-sm lg:w-full md:w-full xs:font-semibold sm:first-letter:text-6xl xs:first-letter:text-4xl xxs:first-letter:text-2xl text-slate-200 text-justify">
+                    <p className="font-inter sm:text-xl xs:text-lg text-sm lg:w-full md:w-full xs:font-semibold sm:first-letter:text-6xl xs:first-letter:text-4xl xxs:first-letter:text-2xl text-slate-200 text-justify overflow-x-hidden" data-aos="fade-right" data-aos-delay="300" data-aos-once='true'>
                         Hello, My name is <span className="text-blue-400 font-poppins">Yossi Nordiansah</span>, I am a Junior Front-End Web Developer who works with React.js Library or Vanilla JavaScript.  I am also accustomed to using Git and GitHub for Collaborative teamwork. Currently, I reside in the city of Mojokerto and am an active student at one of the private universities located there. At the moment, I have gained experience working on various projects, ranging from simple to mid-scale websites, with Attractive and Responsive designs.
                     </p>
                     <div className="mt-7 flex gap-3">
@@ -47,15 +52,15 @@ const Main = () => {
                         </a>
                     </div>
                 </div>
-                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 w-56 h-56 ">
+                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 w-56 h-56" data-aos="fade-left" data-aos-delay="300" data-aos-once='true'>
                     <img className="xs:w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src={foto} alt="" />
                 </div>
             </div>
 
             {/* <!-- Education --> */}
-            <div className="xl:w-4/5 w-[90%] mt-20 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
+            <div className="xl:w-4/5 w-[90%] xl:mt-24 mt-20 m-auto justify-between mobile-sm:flex-col laptop:flex-row items-center" id="education">
                 <h1 className=" font-poppins font-bold text-4xl text-blue-300 text-left">Education</h1>
-                <div className="lg:pl-6 mt-10">
+                <div className="lg:pl-6 mt-10" data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
                     <img src={yayasan} alt="" className="w-6" />
                     <div className="border-l-2 border-white ml-3 mt-2 xs:h-20 h-28 leading-5">
                         <div className="ml-10 text-white flex flex-col lg:gap-3 gap-2 relative -top-9">
@@ -85,9 +90,9 @@ const Main = () => {
             </div>
 
             {/* <!-- Work Experience --> */}
-            <div className="xl:w-4/5 w-[90%] mt-20 mx-auto justify-between " id="education">
+            <div className="xl:w-4/5 w-[90%] mt-20 mx-auto justify-between relative overflow-y-hidden pb-1" id="education">
                 <h1 className="font-poppins pl-0 font-bold xs:text-4xl text-3xl text-blue-300 text-left">Work Experience</h1>
-                <div className="lg:pl-6 mt-10">
+                <div className="lg:pl-6 mt-10"  data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
                     <img src={work} alt="" className="w-6" />
                     <div className="border-l-2 border-white ml-3 mt-2 h-26">
                         <div className="ml-10 text-white flex flex-col gap-4 relative -top-9">
