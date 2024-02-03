@@ -40,8 +40,8 @@ const Main = () => {
             </div>
 
             {/* <!-- intro --> */}
-            <div className="xl:w-4/5 lg:w-[90%] mx-auto lg:mt-16 sm:mt-14 xs:mt-14 mt-10 flex lg:flex-row flex-col-reverse justify-between items-center " id="about">
-                <div className="lg:w-8/12 w-[90%] ">
+            <div className="xl:w-4/5 lg:w-[90%] mx-auto lg:mt-16 sm:mt-14  xs:mt-14 mt-10 flex lg:flex-row flex-col-reverse justify-between items-center " id="about">
+                <div className="lg:w-8/12 w-[90%] overflow-x-hidden">
                     <p className="font-inter sm:text-xl xs:text-lg text-sm lg:w-full md:w-full xs:font-semibold sm:first-letter:text-6xl xs:first-letter:text-4xl xxs:first-letter:text-2xl text-slate-200 text-justify overflow-x-hidden" data-aos="fade-right" data-aos-delay="300" data-aos-once='true'>
                         Hello, My name is <span className="text-blue-400 font-poppins">Yossi Nordiansah</span>, I am a Junior Front-End Web Developer who works with React.js Library or Vanilla JavaScript.  I am also accustomed to using Git and GitHub for Collaborative teamwork. Currently, I reside in the city of Mojokerto and am an active student at one of the private universities located there. At the moment, I have gained experience working on various projects, ranging from simple to mid-scale websites, with Attractive and Responsive designs.
                     </p>
@@ -52,7 +52,7 @@ const Main = () => {
                         </a>
                     </div>
                 </div>
-                <div className="border-8 border-blue-300 overflow-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 w-56 h-56" data-aos="fade-left" data-aos-delay="300" data-aos-once='true'>
+                <div className="border-8 border-blue-300 overflow-hidden overflow-x-hidden rounded-full drop-shadow-[0_0px_15px_#0066ff] sm:h-72 sm:w-72 w-56 h-56" data-aos="fade-left" data-aos-delay="300" data-aos-once='true'>
                     <img className="xs:w-66 mx-auto bg-gradient-to-b to-blue-950 to from-blue-600" src={foto} alt="" />
                 </div>
             </div>

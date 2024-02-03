@@ -66,8 +66,8 @@ const Navbar = () => {
             {
                 showContact ? <div className="bg-white w-[20%] fixed top-20 flex flex-col gap-3 rounded-lg py-3 m-auto right-12">
                     <div onClick={() => setShowContact(false)} className="absolute cursor-pointer -top-4 -right-1"><img src={close} alt="" className="h-12" /></div>
-                    <a target="_blank" href="https://wa.me/6285655230897" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 mt-6 bg-[#e6e6e6] justify-start gap-12"><img src={wa} alt="" /><span className="text-lg font-bold">085655230897</span></a>
-                    <a target="_blank" href="https://t.me/Yossi_nordiansah" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 bg-[#e6e6e6] justify-start gap-12"><img src={tg} alt="" /><span className="text-lg font-bold">Yossi_nordiansah</span></a>
+                    <a target="_blank" href="https://wa.me/6285655230897" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 mt-6 bg-[#e6e6e6] justify-start gap-8"><img src={wa} alt="" /><span className="text-lg font-bold">085655230897</span></a>
+                    <a target="_blank" href="https://t.me/Yossi_nordiansah" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 bg-[#e6e6e6] justify-start gap-8"><img src={tg} alt="" /><span className="text-lg font-bold">Yossi_nordiansah</span></a>
                 </div> : null
             }
             <div className="relative md:hidden">

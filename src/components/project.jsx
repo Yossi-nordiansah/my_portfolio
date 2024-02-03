@@ -100,7 +100,7 @@ const Project = () => {
     ])
 
     return (
-        <div className='bg-gradient-to-b py-16  from-blue-950 to-blue-800'>
+        <div className='bg-gradient-to-b pt-20 min-h-screen from-blue-950 to-blue-800'>
             <h1 className="font-poppins font-bold text-4xl text-center text-blue-300 mb-10">Projects</h1>
             <div className='w-[80%] mx-auto mt-7 flex flex-col pb-20'>
                 <Slider {...settings}>
