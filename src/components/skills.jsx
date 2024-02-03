@@ -11,7 +11,7 @@ import mysql from "../assets/icons/mysql.svg";
 
 const Skills = () => {
   return (
-      <div className="laptop:pt-24 min-h-screen w-full mobile-sm:min-w-full mobile-sm:py-28 bg-gradient-to-b from-blue-950 to-blue-800">
+      <div className="pt-24 pb-14 min-h-screen w-full  bg-gradient-to-b from-blue-950 to-blue-800">
           <h1 className="font-poppins font-bold text-4xl text-center text-blue-300">Skills</h1>
           <div className='border-4 border-blue-600 w-[65%] mx-auto flex px-3 py-6 justify-center gap-6 flex-wrap rounded-lg mt-10'>
 

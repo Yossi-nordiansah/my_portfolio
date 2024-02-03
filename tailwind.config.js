@@ -19,9 +19,14 @@ export default {
       }
     },
   },
+  variants:{
+    extend:{
+      lineClamp : ["hover"]
+    }
+  },
   plugins: [
-    require("tailwind-scrollbar-hide")
-    // ...
+    require("tailwind-scrollbar-hide"),
+    // require("@tailwindcss/line-clamp")
   ]
 }
 

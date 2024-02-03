@@ -5,6 +5,7 @@ import close from "../assets/icons/close2.svg";
 import wa from '../assets/image/icons8-whatsapp-48.png';
 import tg from '../assets/image/icons8-telegram-48.png';
 import menu from '/src/assets/icons/burger-icons.svg';
+import menuClose from "../assets/icons/closeMenu.svg";
 
 const Navbar = () => {
 
@@ -12,6 +13,7 @@ const Navbar = () => {
     const [showContact, setShowContact] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
     const menuRef = useRef();
+
 
     const [navbarMenu, setNavbarMenu] = useState([
         {
@@ -40,6 +42,8 @@ const Navbar = () => {
                 navigate(item.path)
             }
         })
+
+        
     },[])
 
     const handleOnclickMenu = (id) => {
@@ -49,7 +53,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="sm:px-10 px-5  bg-blue-800/5 w-full py-2 fixed flex justify-between items-center backdrop-blur-md z-10">
+        <nav className="sm:px-10 px-5  bg-blue-800/5 w-full py-2 fixed flex justify-between items-center backdrop-blur-md z-10 ">
             <img src={logo} className="xs:w-44 w-32" alt="" />
             <ul className="text-white font-bold font-inter gap-8 hidden md:flex">
                 {navbarMenu?.map(item =>
@@ -66,8 +70,11 @@ const Navbar = () => {
                     <a target="_blank" href="https://t.me/Yossi_nordiansah" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 bg-[#e6e6e6] justify-start gap-12"><img src={tg} alt="" /><span className="text-lg font-bold">Yossi_nordiansah</span></a>
                 </div> : null
             }
-            <img src={menu} alt="" onClick={()=>setShowMenu(!showMenu)} className="md:hidden"/>
-                <ul ref={menuRef}  className={`bg-blue-800 ${showMenu? 'block' : 'hidden'} border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] w-[50%] text-center`}>
+            <div className="relative md:hidden">
+            <img src={menu} alt="" onClick={()=>setShowMenu(!showMenu)} className={`md:hidden ${showMenu? "hidden" : "block"}`}/>
+            {showMenu &&  <img src={menuClose} alt="" onClick={()=>setShowMenu(!showMenu)} className={`md:hidden`}/>}
+            </div>
+                <ul className={`bg-blue-800 ${showMenu? 'block' : 'hidden'} border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] w-[50%] text-center`}>
                     {
                         navbarMenu?.map(item =>(  
                                 <Link to={item.path} key={item.id}>
