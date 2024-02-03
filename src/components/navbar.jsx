@@ -1,19 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/image/logo4.png";
-import close from "../assets/icons/close2.svg";
-import wa from '../assets/image/icons8-whatsapp-48.png';
-import tg from '../assets/image/icons8-telegram-48.png';
 import menu from '/src/assets/icons/burger-icons.svg';
 import menuClose from "../assets/icons/closeMenu.svg";
 
 const Navbar = () => {
 
     const navigate = useNavigate();
-    const [showContact, setShowContact] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
     const menuRef = useRef();
-
 
     const [navbarMenu, setNavbarMenu] = useState([
         {
@@ -30,7 +25,7 @@ const Navbar = () => {
         },
         {
             id: 3,
-            name: 'Project',
+            name: 'Projects',
             path: '/my_portfolio/project',
             status: 'unclicked'
         }
@@ -61,15 +56,7 @@ const Navbar = () => {
                         <li key={item.id} onClick={()=>handleOnclickMenu(item.id)} className="hover:text-blue-400 text-blue-400 shrink-0 drop-shadow-[0_0px_15px_#0073e6] hover:drop-shadow-[0_0px_15px_#0073e6]" title={item.name}><Link to={item.path}>{item.name}</Link></li> : 
                         <li key={item.id} onClick={()=>handleOnclickMenu(item.id)} className="" title={item.name}><Link to={item.path}>{item.name}</Link></li>
                 )}
-                 <li onClick={()=>setShowContact(!showContact)} className="cursor-pointer" title='Contact'>Contact</li>
             </ul>
-            {
-                showContact ? <div className="bg-white w-[20%] fixed top-20 flex flex-col gap-3 rounded-lg py-3 m-auto right-12">
-                    <div onClick={() => setShowContact(false)} className="absolute cursor-pointer -top-4 -right-1"><img src={close} alt="" className="h-12" /></div>
-                    <a target="_blank" href="https://wa.me/6285655230897" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 mt-6 bg-[#e6e6e6] justify-start gap-8"><img src={wa} alt="" /><span className="text-lg font-bold">085655230897</span></a>
-                    <a target="_blank" href="https://t.me/Yossi_nordiansah" className="flex cursor-pointer items-center hover:bg-green-200 py-1 px-3 bg-[#e6e6e6] justify-start gap-8"><img src={tg} alt="" /><span className="text-lg font-bold">Yossi_nordiansah</span></a>
-                </div> : null
-            }
             <div className="relative md:hidden">
             <img src={menu} alt="" onClick={()=>setShowMenu(!showMenu)} className={`md:hidden ${showMenu? "hidden" : "block"}`}/>
             {showMenu &&  <img src={menuClose} alt="" onClick={()=>setShowMenu(!showMenu)} className={`md:hidden`}/>}

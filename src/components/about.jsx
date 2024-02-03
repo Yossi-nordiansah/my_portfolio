@@ -122,7 +122,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="fixed md:hidden right-6 bottom-9">
+            <div className="fixed right-6 bottom-9 animate-bounce" title="click to contact me" data-aos="fade-down" data-aos-delay="200" data-aos-once='true'>
                 <a target="_blank" href="https://wa.me/6285655230897"><img src={wa} alt="" /></a>
             </div>
         </main>
