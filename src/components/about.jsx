@@ -42,13 +42,13 @@ const Main = () => {
             {/* <!-- intro --> */}
             <div className="xl:w-4/5 lg:w-[90%] mx-auto lg:mt-16 sm:mt-14  xs:mt-14 mt-10 flex lg:flex-row flex-col-reverse justify-between items-center " id="about">
                 <div className="lg:w-8/12 w-[90%] overflow-x-hidden">
-                    <p className="font-inter sm:text-xl xs:text-lg text-sm lg:w-full md:w-full xs:font-semibold sm:first-letter:text-6xl xs:first-letter:text-4xl xxs:first-letter:text-2xl text-slate-200 text-justify overflow-x-hidden" data-aos="fade-right" data-aos-delay="300" data-aos-once='true'>
+                    <p className="font-inter sm:text-xl xs:text-lg text-sm lg:w-full md:w-full sm:font-semibold xs:font-medium sm:first-letter:text-6xl xs:first-letter:text-4xl xxs:first-letter:text-2xl text-slate-200 text-justify overflow-x-hidden" data-aos="fade-right" data-aos-delay="300" data-aos-once='true'>
                         Hello, My name is <span className="text-blue-400 font-poppins">Yossi Nordiansah</span>, I am a Junior Front-End Web Developer who works with React.js Library or Vanilla JavaScript.  I am also accustomed to using Git and GitHub for Collaborative teamwork. Currently, I reside in the city of Mojokerto and am an active student at one of the private universities located there. At the moment, I have gained experience working on various projects, ranging from simple to mid-scale websites, with Attractive and Responsive designs.
                     </p>
                     <div className="mt-7 flex gap-3">
-                        <a href={pdfURL} target="_blank" download="Yossi Nordiansah Resume" className="border-2 border-dashed hover:bg-stone-500 flex items-center gap-2 justify-center rounded-lg w-fit cursor-pointer bg-white/30 border-yellow-400 py-1 px-3">
+                        <a href={pdfURL} target="_blank" download="Yossi Nordiansah Resume" className="border-2 border-dashed hover:bg-stone-500 flex items-center gap-2 justify-center rounded-lg w-fit cursor-pointer bg-white/30 border-yellow-400 sm:py-1 py-3 px-3">
                             <img src={view} className='sm:w-6 w-4 ' alt="" />
-                            <p className="text-white md:text-sm sm:text-[12px] xs:text-[10px] text-[8px] text-center">VIEW RESUME</p>
+                            <p className="text-white md:text-sm sm:text-[12px] xs:text-[12px] xs:font-medium xs: text-[8px] text-center">VIEW RESUME</p>
                         </a>
                     </div>
                 </div>
