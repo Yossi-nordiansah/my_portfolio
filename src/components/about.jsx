@@ -90,7 +90,7 @@ const Main = () => {
             </div>
 
             {/* <!-- Work Experience --> */}
-            <div className="xl:w-4/5 w-[90%] mt-20 mx-auto justify-between relative overflow-y-hidden pb-1" id="education">
+            <div className="xl:w-4/5 w-[90%] mt-20 mx-auto justify-between relative overflow-y-hidden pb-3" id="education">
                 <h1 className="font-poppins pl-0 font-bold xs:text-4xl text-3xl text-blue-300 text-left">Work Experience</h1>
                 <div className="lg:pl-6 mt-10"  data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
                     <img src={work} alt="" className="w-6" />
