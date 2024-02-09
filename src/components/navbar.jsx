@@ -65,21 +65,15 @@ const Navbar = () => {
                         <li key={item.id} onClick={() => handleOnclickMenu(item.id)} className="" title={item.name}><Link to={item.path}>{item.name}</Link></li>
                 )}
             </ul>
-            {/* <button className="relative md:hidden border">
+            <button className="relative md:hidden border-none">
                 <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ? "hidden" : "block"}`} />
                 {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden`} />}
-                <img src={menu} alt="" tabIndex={1} onFocus={() => setShowMenu(true)} className={`md:hidden ${showMenu ? "hidden" : "block"}`} 
-                 onBlur={() => handleBlur}/>
+            </button>
+            {/* <button tabindex={1} className="relative md:hidden border-none" onFocus={() => setShowMenu(true)}  onBlur={() => setShowMenu(false)}>
+                <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ? "hidden" : "block"}`} />
                 {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(false)} className={`md:hidden`} />}
             </button> */}
-            <button className="relative md:hidden border-none" onFocus={() => setShowMenu(true)}  onBlur={() => setShowMenu(false)}>
-                {/* <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ? "hidden" : "block"}`} />
-                {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden`} />} */}
-                <img src={menu} alt="" className={`md:hidden ${showMenu ? "hidden" : "block"}`} 
-                />
-                {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(false)} className={`md:hidden`} />}
-            </button>
-            <ul className={`bg-blue-800 ${showMenu ? 'block' : 'hidden'} border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] w-[50%] text-center`}>
+            {showMenu && <ul className={`bg-blue-800 border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] w-[50%] text-center`}>
                 {
                     navbarMenu?.map(item => (
                         <Link to={item.path} key={item.id}>
@@ -87,7 +81,7 @@ const Navbar = () => {
                         </Link>
                     ))
                 }
-            </ul>
+            </ul>}
         </nav>
     )
 }
