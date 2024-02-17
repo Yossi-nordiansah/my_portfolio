@@ -7,7 +7,7 @@ import menuClose from "../assets/icons/closeMenu.svg";
 const Navbar = () => {
 
     const navigate = useNavigate();
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
     const menuRef = useRef();
 
     const [navbarMenu, setNavbarMenu] = useState([
