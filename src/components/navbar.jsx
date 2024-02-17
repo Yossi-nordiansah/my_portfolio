@@ -7,7 +7,7 @@ import menuClose from "../assets/icons/closeMenu.svg";
 const Navbar = () => {
 
     const navigate = useNavigate();
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
     const menuRef = useRef();
 
     const [navbarMenu, setNavbarMenu] = useState([
@@ -37,17 +37,27 @@ const Navbar = () => {
                 navigate(item.path)
             }
         })
+        const handleClickOutside = (event) => {
+            if(menuRef.current && !menuRef.current.contains(event.target)){
+                setShowMenu(false)
+            }
+        };
 
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+          document.removeEventListener('click', handleClickOutside);
+        };
 
     }, [])
 
-    useEffect(()=>{
-        if(showMenu === true){
+    useEffect(() => {
+        if (showMenu === true) {
             console.log('true')
-        }else{
+        } else {
             console.log('false')
         }
-    },[showMenu])
+    }, [showMenu])
 
     const handleOnclickMenu = (id) => {
         if (navbarMenu.find((items) => items.id === id)) {
@@ -56,7 +66,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sm:px-10 px-5  bg-blue-800/5 w-full py-2 fixed flex justify-between items-center backdrop-blur-md z-10 ">
+        <nav className="sm:px-10 px-5  bg-blue-800/5 w-full md:h-16 h-14 fixed flex justify-between items-center backdrop-blur-md z-10 overflow-y-visible">
             <img src={logo} className="xs:w-44 w-32" alt="" />
             <ul className="text-white font-bold font-inter gap-8 hidden md:flex">
                 {navbarMenu?.map(item =>
@@ -65,23 +75,19 @@ const Navbar = () => {
                         <li key={item.id} onClick={() => handleOnclickMenu(item.id)} className="" title={item.name}><Link to={item.path}>{item.name}</Link></li>
                 )}
             </ul>
-            <button className="relative md:hidden border-none">
-                <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ? "hidden" : "block"}`} />
-                {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden`} />}
-            </button>
-            {/* <button tabindex={1} className="relative md:hidden border-none" onFocus={() => setShowMenu(true)}  onBlur={() => setShowMenu(false)}>
-                <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ? "hidden" : "block"}`} />
-                {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(false)} className={`md:hidden`} />}
-            </button> */}
-            {showMenu && <ul className={`bg-blue-800 border-zinc-400 border-2 font-semibold rounded-lg absolute text-white right-10 top-10 sm:w-[30%] xs:w-[40%] w-[50%] text-center`}>
-                {
-                    navbarMenu?.map(item => (
-                        <Link to={item.path} key={item.id}>
-                            <li className={`py-3 border-b active:bg-blue-900`} key={item.id}>{item.name}</li>
-                        </Link>
-                    ))
-                }
-            </ul>}
+            <div className="md:hidden">
+                <div ref={menuRef} className={`w-8 h-8 overflow-visible rounded-l-md`}>
+                    <div className='relative'>
+                        <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden h-8 w-8 ${showMenu ? "hidden" : "block"}`} />
+                {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden h-8 w-8`} />}
+                    </div>
+                    <div className={`flex flex-col overflow-hidden w-32 duration-300 mt-6 font-bold text-white rounded-l-md bg-blue-600 ${showMenu ? '-translate-x-[75px]' : 'translate-x-14'}`}>
+                    <Link to={'/my_portfolio/'} className="text-center py-4 px-10 hover:bg-blue-800">About</Link>
+                    <Link to={'/my_portfolio/skills'} className='text-center py-4 border-y px-10 hover:bg-blue-800'>Skills</Link>
+                    <Link to={'/my_portfolio/project'} className='text-center py-4 px-10 hover:bg-blue-800'>Projects</Link>
+                    </div>
+                </div>
+            </div>
         </nav>
     )
 }
