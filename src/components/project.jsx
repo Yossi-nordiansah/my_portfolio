@@ -45,7 +45,7 @@ const Project = () => {
         {
             id:1,
             title : 'Task Tracker',
-            category: 'Web App',
+            category: 'CRUD App',
             description:'A web app to-do list that is simplified with features for completion and deletion from the lis',
             repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
             page:'https://loquacious-horse-45d5f2.netlify.app/',
@@ -54,7 +54,7 @@ const Project = () => {
         {
             id:2,
             title : 'Books App',
-            category: 'Web App',
+            category: 'CRUD App',
             description:'A web app that is useful for storing book data, featuring Create, Read, Update, and Delete functionalities.',
             repo:'https://github.com/Yossi-nordiansah/task-tracker-App',
             page:'https://yossi-nordiansah.github.io/books-app//',
@@ -63,7 +63,7 @@ const Project = () => {
         {
             id:3,
             title : 'Password Generator',
-            category: 'Web App',
+            category: 'Generate App',
             description:'A web app that functions to generate a random password based on the username you input.',
             repo:'https://github.com/Yossi-nordiansah/password-generator',
             page:'https://yossi-nordiansah.github.io/password-generator/',
@@ -72,7 +72,7 @@ const Project = () => {
         {
             id:4,
             title : 'Calculator',
-            category: 'Web App',
+            category: 'Calculator',
             description:'A simple calculator App',
             repo:'https://github.com/Yossi-nordiansah/kalkulator',
             page:'https://yossi-nordiansah.github.io/kalkulator/',
@@ -81,7 +81,7 @@ const Project = () => {
         {
             id:5,
             title : 'Dapur Minang',
-            category: 'Restaurant Website',
+            category: 'Restaurant Landing Page',
             description:'This is a landing page for the "Dapur Minang" restaurant website, equipped with simple and attractive animations. Additionally, this landing page is also equipped with a dark mode to better suit users.',
             repo:'https://github.com/Yossi-nordiansah/dapur-minang',
             page:'https://yossi-nordiansah.github.io/dapur-minang/',
@@ -89,7 +89,7 @@ const Project = () => {
         },
         {
             id:6,
-            title : 'Netplix',
+            title : 'Netflix Clone',
             category: 'Landing Page',
             description:'A cloning of the Netflix landing page.',
             repo:'https://github.com/Yossi-nordiansah/netplix',

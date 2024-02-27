@@ -7,12 +7,14 @@ import About from './components/about';
 import Skills from './components/skills';
 import Project from './components/project'
 import MyComponent from './components/navbar';
+import ellipse from './assets/image/Ellipse 76.svg';
 
 
 function App() {
 
   return (
     <div className='bg-gradient-to-b from-blue-950 to-blue-800'>
+
       <Router>
         <Navbar />
         <Routes>
