@@ -7,36 +7,36 @@ import work from "../assets/icons/work.svg";
 import wa from '../assets/image/icons8-whatsapp-48.png';
 import { TypeAnimation } from 'react-type-animation';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 const Main = () => {
 
     useEffect(() => {
         AOS.init();
-      }, []);
+    }, []);
 
     const pdfURL = 'https://drive.google.com/file/d/1BqsI9aYNeBR8zvrUu5-3R_TfKJBTfglJ/view?usp=sharing';
     const [showContact, setShowContact] = useState(false);
     return (
         <main className=" w-full min-w-full sm:pt-24 xs:pt-20 pt-16 bg-gradient-to-b grid grid-rows-[auto_auto_auto_auto_30px_auto] gap-y-3 from-blue-950 to-blue-800">
             <div className="relative">
-            <TypeAnimation
-                sequence={[
-                    'Hallo...',
-                    1000, 
-                    'Wellcome To My Portfolio',
-                    1000,
-                    'My Name is Yossi Nordiansah',
-                    1000,
-                    'I am a Junior Front-End Web Developer',
-                    1000
-                ]}
-                wrapper="h1"
-                speed={50}
-                cursor={false}
-                repeat={0}
-                className="absolute font-kanit lg:text-4xl sm:text-4xl sm:text-left xs:text-[22px] xs:leading-[28px] text-[18px] xl:pl-32 lg:pl-14 md:pl-10 sm:pl-8 xs:pl-5 pl-5  text-sky-400 tracking-wider font-bold drop-shadow-[0_0px_15px_#0066ff]"
-            />
+                <TypeAnimation
+                    sequence={[
+                        'Hallo...',
+                        1000,
+                        'Wellcome To My Portfolio',
+                        1000,
+                        'My Name is Yossi Nordiansah',
+                        1000,
+                        'I am a Junior Front-End Web Developer',
+                        1000
+                    ]}
+                    wrapper="h1"
+                    speed={50}
+                    cursor={false}
+                    repeat={0}
+                    className="absolute font-kanit lg:text-4xl sm:text-4xl sm:text-left xs:text-[22px] xs:leading-[28px] text-[18px] xl:pl-32 lg:pl-14 md:pl-10 sm:pl-8 xs:pl-5 pl-5  text-sky-400 tracking-wider font-bold drop-shadow-[0_0px_15px_#0066ff]"
+                />
             </div>
 
             {/* <!-- intro --> */}
@@ -92,9 +92,18 @@ const Main = () => {
             {/* <!-- Work Experience --> */}
             <div className="xl:w-4/5 w-[90%] mt-20 mx-auto justify-between relative overflow-y-hidden pb-3" id="education">
                 <h1 className="font-poppins pl-0 font-bold xs:text-4xl text-3xl text-blue-300 text-left">Work Experience</h1>
-                <div className="lg:pl-6 mt-10"  data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
+                <div className="lg:pl-6 mt-10" data-aos="fade-up" data-aos-delay="200" data-aos-once='true'>
                     <img src={work} alt="" className="w-6" />
-                    <div className="border-l-2 border-white ml-3 mt-2 h-26">
+                    <div className="border-l-2 border-white ml-3 mt-2 h-26 ">
+                        <div className="ml-10 text-white flex flex-col gap-4 relative -top-9">
+                            <h1 className="lg:text-2xl text-xl font-bold leading-6">CV Natusi</h1>
+                            <p className="font-semibold">Internship</p>
+                            <p className="font-semibold">8 April 2024 - 8 Mei 2024</p>
+                            <p className="font-bold">Front End Developer</p>
+                        </div>
+                    </div>
+                    <img src={work} alt="" className="w-6 mt-4" />
+                    <div className="border-l-2 border-white ml-3 mt-4 h-26">
                         <div className="ml-10 text-white flex flex-col gap-4 relative -top-9">
                             <h1 className="lg:text-2xl text-xl font-bold leading-6">PT Wezzo Sukses Mandiri</h1>
                             <p className="font-semibold">Full Time Job</p>
@@ -103,7 +112,7 @@ const Main = () => {
                         </div>
                     </div>
                     <img src={work} alt="" className="w-6 mt-4" />
-                    <div className="border-l-2 border-white ml-3 mt-2 h-26">
+                    <div className="border-l-2 border-white ml-3 mt-2 h-24">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="lg:text-2xl text-xl font-bold leading-6">PT Prada Karya Perkasa</h1>
                             <p className="font-semibold">Full Time Job</p>
@@ -111,7 +120,7 @@ const Main = () => {
                             <p className="font-bold">Helper Thermo</p>
                         </div>
                     </div>
-                    <img src={work} alt="" className="w-6 mt-4" />
+                    {/* <img src={work} alt="" className="w-6 mt-4" />
                     <div className="border-l-2 border-white ml-3 mt-2 h-24">
                         <div className="ml-10 text-white flex flex-col gap-3 relative -top-9">
                             <h1 className="lg:text-2xl text-xl font-bold leading-6">Yudi Shoes</h1>
@@ -119,7 +128,7 @@ const Main = () => {
                             <p className="font-semibold">2018 - 2019</p>
                             <p className="font-bold">Shoemaker</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="fixed right-6 bottom-9 animate-bounce" title="click to contact me" data-aos="fade-down" data-aos-delay="200" data-aos-once='true'>

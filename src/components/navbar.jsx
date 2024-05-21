@@ -38,7 +38,7 @@ const Navbar = () => {
             }
         })
         const handleClickOutside = (event) => {
-            if(menuRef.current && !menuRef.current.contains(event.target)){
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
                 setShowMenu(false)
             }
         };
@@ -46,7 +46,7 @@ const Navbar = () => {
         document.addEventListener('mousedown', handleClickOutside);
 
         return () => {
-          document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
 
     }, [])
@@ -79,18 +79,18 @@ const Navbar = () => {
                 <div ref={menuRef} className={`w-8 h-8 overflow-visible rounded-l-md`}>
                     <div className='relative'>
                         <img src={menu} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden h-8 w-8 ${showMenu ? "hidden" : "block"}`} />
-                {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden h-8 w-8`} />}
+                        {showMenu && <img src={menuClose} alt="" onClick={() => setShowMenu(!showMenu)} className={`md:hidden h-8 w-8`} />}
                     </div>
                     <div className={`flex flex-col overflow-hidden w-32 duration-300 mt-6 font-bold text-white rounded-l-md bg-blue-600 ${showMenu ? '-translate-x-[75px]' : 'translate-x-14'}`}>
-                    <Link to={'/my_portfolio/'} className="text-center py-4 px-10 hover:bg-blue-800">About</Link>
-                    <Link to={'/my_portfolio/skills'} className='text-center py-4 border-y px-10 hover:bg-blue-800'>Skills</Link>
-                    <Link to={'/my_portfolio/project'} className='text-center py-4 px-10 hover:bg-blue-800'>Projects</Link>
+                        <Link to={'/my_portfolio/'} className="text-center py-4 px-10 hover:bg-blue-800">About</Link>
+                        <Link to={'/my_portfolio/skills'} className='text-center py-4 border-y px-10 hover:bg-blue-800'>Skills</Link>
+                        <Link to={'/my_portfolio/project'} className='text-center py-4 px-10 hover:bg-blue-800'>Projects</Link>
                     </div>
                 </div>
             </div>
         </nav>
     )
-}
+} 
 
 export default Navbar;
 
