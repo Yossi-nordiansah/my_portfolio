@@ -11,6 +11,7 @@ import dapur_Minang from '../assets/image/dapurMinang.png';
 import netplix from '../assets/image/netflix.png';
 import external from '../assets/icons/external-link.svg';
 import sc from '../assets/icons/code.svg';
+import ynMovie from "../assets/image/ynmovie.png"
 
 const Project = () => {
 
@@ -95,6 +96,15 @@ const Project = () => {
             repo:'https://github.com/Yossi-nordiansah/netplix',
             page:'https://yossi-nordiansah.github.io/netplix/',
             img:netplix
+        },
+        {
+            id:7,
+            title : 'YN Movie',
+            category: 'Information System',
+            description:'A web app that functions to search for movie information using the API from omdb.com.',
+            repo:'https://github.com/Yossi-nordiansah/yn_movie',
+            page:'https://yossi-nordiansah.github.io/yn_movie/',
+            img:ynMovie
         },
 
     ])
